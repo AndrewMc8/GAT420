@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 269192884}
   - component: {fileID: 269192883}
   - component: {fileID: 269192882}
+  - component: {fileID: 269192885}
   - component: {fileID: 269192881}
   - component: {fileID: 269192880}
   - component: {fileID: 269192879}
@@ -331,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagName: Player
   radius: 5
-  maxAngle: 0
+  maxAngle: 90
 --- !u!114 &269192883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,9 +346,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   perception: {fileID: 269192882}
-  steering: {fileID: 0}
-  maxSpeed: 3
-  maxForce: 2
+  steering: {fileID: 269192885}
+  maxSpeed: 4
+  maxForce: 4
 --- !u!4 &269192884
 Transform:
   m_ObjectHideFlags: 0
@@ -363,6 +364,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &269192885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269192878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39ca51cc14c1c443a7e61eb275585cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderDistance: 1
+  wanderRadius: 3
+  wanderDisplacement: 5
 --- !u!1 &279307528
 GameObject:
   m_ObjectHideFlags: 0
